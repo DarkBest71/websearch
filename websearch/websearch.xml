@@ -1,0 +1,19 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulewebsearch" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="rulewebsearch" scope="public">
+    <example>Sarah recherche sur internet les actualitées le monde</example>
+    <tag>out.action=new Object(); </tag>
+
+    <!-- <item>Sarah</item> -->
+    <one-of>
+    <item>recherche sur google<ruleref special="GARBAGE" /><tag>out.action._attributes.dictation="true";</tag><tag>out.action.val="google";</tag></item>
+    <item>recherche sur 411<ruleref special="GARBAGE" /><tag>out.action._attributes.dictation="true";</tag><tag>out.action.val="411";</tag></item>
+    <item>recherche sur ebay<ruleref special="GARBAGE" /><tag>out.action._attributes.dictation="true";</tag><tag>out.action.val="ebay";</tag></item>
+    <item>recherche sur youtube<ruleref special="GARBAGE" /><tag>out.action._attributes.dictation="true";</tag><tag>out.action.val="youtube";</tag></item>
+    <item>recherche sur leboncoin<ruleref special="GARBAGE" /><tag>out.action._attributes.dictation="true";</tag><tag>out.action.val="lbc";</tag></item>
+    <item>recherche sur la communauté<ruleref special="GARBAGE" /><tag>out.action._attributes.dictation="true";</tag><tag>out.action.val="com";</tag></item>
+    <item>recherche des images de<ruleref special="GARBAGE" /><tag>out.action._attributes.dictation="true";</tag><tag>out.action.val="images";</tag></item>
+    </one-of>
+
+  <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/websearch";</tag>
+  </rule>
+</grammar>

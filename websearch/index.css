@@ -1,0 +1,19 @@
+body
+{
+font-family:arial;
+}
+
+p
+{
+font-size: 20px;
+}
+
+.nom
+{
+font-weight: bold;
+}
+
+.amodifier
+{
+color: red;
+}

@@ -1,0 +1,9 @@
+.plugin-gridster.websearch .front {
+  background: #FFFFFF url('images/logo.jpg') center 11px;
+  background-size:   160px 128px;
+  background-repeat: no-repeat;
+}
+
+.plugin-gridster.websearch .back {
+  background: #FFFFFFF;
+}

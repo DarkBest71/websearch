@@ -1,0 +1,10 @@
+{
+  "modules" : { 
+    "websearch"  : {
+      "description": "Sarah lance une recherche sur internet",
+	  "Auteur": "Avatar Rousseau (Dark Best)",
+	  "Categorie": "Speech",
+      "version"    : "2.0"
+    }
+  }
+}
